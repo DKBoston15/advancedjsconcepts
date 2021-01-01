@@ -1,12 +1,15 @@
+import React, { useState } from "react";
 import "./App.css";
-import Welcome from "./components/hello";
-import MaterialUI from "./components/materialui";
+import MainMenu from "./components/MainMenu";
+import MainContentContainer from "./components/MainContentContainer";
 
 function App() {
+    const [content, setContent] = useState("Async");
     return (
         <div className="App">
-            <Welcome name="Dakota" />
-            <MaterialUI />
+            <h1 className="header">Advanced JS Concepts</h1>
+            <MainMenu setContent={setContent} />
+            <MainContentContainer content={content} />
         </div>
     );
 }
