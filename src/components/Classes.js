@@ -1,7 +1,11 @@
 import "../App.css";
 
 function Classes() {
-    return <h1>Classes</h1>;
+    return (
+        <div className="mainContent">
+            <h1>Classes</h1>
+        </div>
+    );
 }
 
 export default Classes;

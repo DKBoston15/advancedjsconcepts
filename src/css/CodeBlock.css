@@ -1,9 +1,8 @@
 .codeBlock {
     background-color: #282828;
     border-radius: 5px;
-    height: 100%;
     width: 100%;
-    max-width: 40vh;
+    max-width: 50vh;
     font-size: 1em;
     display: flex;
     justify-content: left;

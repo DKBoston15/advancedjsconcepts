@@ -1,7 +1,11 @@
 import "../App.css";
 
 function Async() {
-    return <h1>Async</h1>;
+    return (
+        <div className="mainContent">
+            <h1>Async</h1>
+        </div>
+    );
 }
 
 export default Async;
