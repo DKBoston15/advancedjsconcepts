@@ -76,6 +76,20 @@ function Hoisting() {
                 </div>
             </div>
             <hr />
+            <h1>Class Hoisting</h1>
+            <h3>
+                An important difference between function declarations and class
+                declarations is that function declarations are hoisted and class
+                declarations are not. You first need to declare your class and
+                then access it, otherwise code like the following will throw a
+                ReferenceError.
+            </h3>
+            <CodeBlock
+                code={{
+                    __html: `const p = new Rectangle(); // ReferenceError<br><br>class Rectangle {}`
+                }}
+            />
+            <hr />
             <h1>TL:DR</h1>
             <ul>
                 <li>
