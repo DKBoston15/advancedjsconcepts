@@ -1,7 +1,11 @@
 import "../App.css";
 
 function Promises() {
-    return <h1>Promises</h1>;
+    return (
+        <div className="mainContent">
+            <h1>Promises</h1>
+        </div>
+    );
 }
 
 export default Promises;

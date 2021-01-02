@@ -4,7 +4,7 @@ import "../css/Hoisting.css";
 
 function Hoisting() {
     return (
-        <div className="Hoisting">
+        <div className="mainContent">
             <h1>Variable Hoisting</h1>
             <hr />
             <h3>

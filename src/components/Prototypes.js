@@ -1,7 +1,11 @@
 import "../App.css";
 
 function Prototypes() {
-    return <h1>Prototypes</h1>;
+    return (
+        <div className="mainContent">
+            <h1>Prototypes</h1>
+        </div>
+    );
 }
 
 export default Prototypes;
