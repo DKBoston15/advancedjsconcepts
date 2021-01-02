@@ -3,6 +3,7 @@ body {
 }
 :root {
     --main: white;
+    --secondary: orange;
 }
 .App {
 }
@@ -11,6 +12,7 @@ body {
     text-align: center;
     font-size: 3rem;
 }
-h1 {
+h1,
+h3 {
     color: var(--main);
 }

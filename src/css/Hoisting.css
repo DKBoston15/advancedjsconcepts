@@ -1,0 +1,34 @@
+.Hoisting {
+    padding: 2% 5% 0% 5%;
+}
+.codeBlockContainer {
+    display: flex;
+    flex-direction: column;
+}
+hr {
+    border: 1px solid var(--secondary);
+    width: 100%;
+}
+li {
+    display: block;
+}
+p {
+    color: var(--main);
+}
+.linkContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 50px;
+}
+a {
+    padding: 10px;
+    color: var(--secondary);
+}
+.functionContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+.menuDivider {
+    color: var(--secondary);
+}
