@@ -8,11 +8,17 @@ function MainMenu({ setContent }) {
     return (
         <div className="menu">
             <li onClick={() => onContentClick("Async")}>Async</li>
+            <span className="menuDivider">|</span>
             <li onClick={() => onContentClick("Classes")}>Classes</li>
+            <span className="menuDivider">|</span>
             <li onClick={() => onContentClick("Context")}>Context</li>
-            <li onClick={() => onContentClick("Functions")}>Functions</li>
+            <span className="menuDivider">|</span>
+            <li onClick={() => onContentClick("This")}>This</li>
+            <span className="menuDivider">|</span>
             <li onClick={() => onContentClick("Hoisting")}>Hoisting</li>
+            <span className="menuDivider">|</span>
             <li onClick={() => onContentClick("Promises")}>Promises</li>
+            <span className="menuDivider">|</span>
             <li onClick={() => onContentClick("Prototypes")}>Prototypes</li>
         </div>
     );

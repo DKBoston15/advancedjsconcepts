@@ -1,7 +1,7 @@
 import Async from "./Async";
 import Classes from "./Classes";
 import Context from "./Context";
-import Functions from "./Functions";
+import This from "./This";
 import Hoisting from "./Hoisting";
 import Promises from "./Promises";
 import Prototypes from "./Prototypes";
@@ -14,7 +14,7 @@ function MainContentContainer(props) {
         case "Context":
             return <Context />;
         case "Functions":
-            return <Functions />;
+            return <This />;
         case "Hoisting":
             return <Hoisting />;
         case "Promises":
