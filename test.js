@@ -1,28 +1,14 @@
-class Person {
-    constructor(fn, ln, height) {
-        this.fn = fn;
-        this.ln = ln;
-        this.height = height; //feet
+class Square {
+    constructor(width) {
+        this.width = width;
+        this.height = width;
     }
-    get heightInInches() {
-        return this.height * 12;
-    }
-    speak() {
-        return this;
+
+    static equals(a, b) {
+        return a.width * a.height == b.height * b.width;
     }
 }
 
-class betterPerson extends Person {
-    get heightInYards() {
-        return this.height * 3;
-    }
-}
-
-const person1 = new Person("George", "The Giant", 10);
-const person2 = new betterPerson("Alan", "The Ant", 0.01);
-
-console.log(person1.heightInInches);
-console.log(person1);
-console.log(person1.heightInYards);
-
-console.log(person2.heightInYards);
+let square1 = new Square(8);
+let square2 = new Square(9);
+console.log(Square.equals(square1, square2)); //false
