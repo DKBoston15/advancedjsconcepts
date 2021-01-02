@@ -13,8 +13,6 @@ function MainMenu({ setContent }) {
             <span className="menuDivider">|</span>
             <li onClick={() => onContentClick("Context")}>Context</li>
             <span className="menuDivider">|</span>
-            <li onClick={() => onContentClick("This")}>This</li>
-            <span className="menuDivider">|</span>
             <li onClick={() => onContentClick("Hoisting")}>Hoisting</li>
             <span className="menuDivider">|</span>
             <li onClick={() => onContentClick("Promises")}>Promises</li>
