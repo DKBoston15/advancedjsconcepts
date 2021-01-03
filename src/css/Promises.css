@@ -17,3 +17,9 @@
 .MuiButton-contained {
     background-color: var(--secondary) !important;
 }
+.errorText {
+    color: white;
+    font-size: 5em;
+    text-align: center;
+    margin-top: 25%;
+}

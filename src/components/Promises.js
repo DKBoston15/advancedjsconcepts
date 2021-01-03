@@ -106,7 +106,11 @@ function Promises() {
             </div>
         );
     } else {
-        return <div>Loading</div>;
+        return (
+            <div class="errorText">
+                Loading... If stuck here, reload the page.
+            </div>
+        );
     }
 }
 

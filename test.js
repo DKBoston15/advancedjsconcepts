@@ -1,40 +1,14 @@
-function makeRequest(location) {
-    return new Promise((resolve, reject) => {
-        console.log(`Making request to ${location}`);
-        if (location == "Google") {
-            resolve("Google says hi!");
-        } else {
-            reject("We can only talk to Google.");
-        }
-    });
-}
-function processRequest(response) {
-    return new Promise((resolve, reject) => {
-        console.log("Processing Request");
-        resolve(`Extra Information: ${response}`);
-    });
-}
+//Try creating an object with a method. Apply a prototype to that object and use it.
 
-// makeRequest("Facebook")
-//     .then((res) => {
-//         console.log("Response Recieved");
-//         return processRequest(res);
-//     })
-//     .then((processedRequest) => {
-//         console.log(processedRequest);
-//     })
-//     .catch((err) => {
-//         console.log(err);
-//     });
-
-async function doWork() {
-    try {
-        const response = await makeRequest("Google");
-        console.log("Response Received");
-        const processedResponse = await processRequest(response);
-        console.log(processedResponse);
-    } catch {
-        console.log("Error");
-    }
+function Dog(name, color, age) {
+    this.name = name;
+    this.color = color;
+    this.age = age;
 }
-doWork();
+Dog.prototype.bark = function () {
+    this.bark = true;
+    console.log(`I am ${this.name}`);
+};
+
+let dog1 = new Dog("Koa", "Tri-Color", "6 weeks");
+dog1.bark();
