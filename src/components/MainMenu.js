@@ -7,7 +7,7 @@ function MainMenu({ setContent }) {
 
     return (
         <div className="menu">
-            <li onClick={() => onContentClick("Async")}>Async</li>
+            <li onClick={() => onContentClick("AsyncAwait")}>Async/Await</li>
             <span className="menuDivider">|</span>
             <li onClick={() => onContentClick("Classes")}>Classes</li>
             <span className="menuDivider">|</span>

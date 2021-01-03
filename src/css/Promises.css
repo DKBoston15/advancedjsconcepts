@@ -1,0 +1,19 @@
+.fetchExampleContainer {
+    display: flex;
+    align-items: center;
+}
+.apiResultsContainer {
+    border: 1px solid var(--secondary);
+    border-radius: 5px;
+    margin-left: 10%;
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    flex-direction: column;
+}
+.apiList {
+    padding: 0px;
+}
+.MuiButton-contained {
+    background-color: var(--secondary) !important;
+}
