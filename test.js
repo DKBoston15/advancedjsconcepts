@@ -1,14 +1,24 @@
-class Square {
-    constructor(width) {
-        this.width = width;
-        this.height = width;
-    }
+const fetch = require("node-fetch");
 
-    static equals(a, b) {
-        return a.width * a.height == b.height * b.width;
+let p = new Promise((resolve, reject) => {
+    let a = 1 + 1;
+    if (a == 2) {
+        resolve("Success");
+    } else {
+        reject("Failed");
     }
-}
+});
 
-let square1 = new Square(8);
-let square2 = new Square(9);
-console.log(Square.equals(square1, square2)); //false
+p.then((message) => {
+    console.log(message);
+})
+    .catch((err) => {
+        console.log(err);
+    })
+    .then(() => {
+        console.log("Yes!");
+    });
+
+fetch("https://jsonplaceholder.typicode.com/users/1")
+    .then((response) => response.json())
+    .then((json) => console.log(json));

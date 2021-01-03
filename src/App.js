@@ -6,7 +6,7 @@ import MainContentContainer from "./components/MainContentContainer";
 import Switch from "@material-ui/core/Switch";
 
 function App() {
-    const [content, setContent] = useState("Async");
+    const [content, setContent] = useState("AsyncAwait");
     const [state, setState] = React.useState({
         checkedA: true,
         checkedB: true
