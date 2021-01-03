@@ -10,7 +10,6 @@ body {
 .headerContainer {
     display: flex;
     align-items: center;
-    margin-top: -32px;
 }
 .header {
     color: var(--main);
@@ -18,7 +17,7 @@ body {
     font-size: 3rem;
     padding-top: 15px 0px 15px 0px;
     background: var(--secondary);
-    flex: 8;
+    width: 100%;
 }
 h1,
 h3 {
@@ -26,8 +25,6 @@ h3 {
 }
 .mainContent {
     padding: 2% 5% 0% 5%;
-}
-.themeSwitch {
 }
 
 .linkContainer {
@@ -39,4 +36,7 @@ h3 {
 a {
     padding: 10px;
     color: var(--secondary);
+}
+.footer {
+    background: var(--main);
 }

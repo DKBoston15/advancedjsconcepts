@@ -49,8 +49,10 @@ function App() {
 
     return (
         <div className="App">
-            <div className="headerContainer">
-                <h1 className="header">Advanced JS Concepts</h1>
+            <h1 className="header">Advanced JS Concepts</h1>
+            <MainMenu setContent={setContent} />
+            <MainContentContainer content={content} />
+            <div className="footer">
                 <PurpleSwitch
                     checked={state.checkedA}
                     onChange={handleChange}
@@ -59,9 +61,6 @@ function App() {
                     className="themeSwitch"
                 />
             </div>
-
-            <MainMenu setContent={setContent} />
-            <MainContentContainer content={content} />
         </div>
     );
 }
