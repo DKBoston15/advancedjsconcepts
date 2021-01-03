@@ -102,12 +102,6 @@ function Promises() {
                         rel="noreferrer">
                         Reference #1 (Webdev Simplified)
                     </a>
-                    <a
-                        href="https://medium.com/better-programming/understanding-the-this-keyword-in-javascript-cb76d4c7c5e8"
-                        target="_blank"
-                        rel="noreferrer">
-                        Reference #2 (Medium Tutorial)
-                    </a>
                 </div>
             </div>
         );
